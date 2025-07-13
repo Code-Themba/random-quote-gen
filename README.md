@@ -331,30 +331,7 @@ Each breakpoint adjusts font sizes, container widths, and element spacing for op
 
 ---
 
-## Best Practices & Recommendations
-
-- **API Key Security:** Don’t commit real API keys to public repos. Use environment variables or a backend proxy.  
-- **Accessibility:** Add ARIA roles and alt text for better screen-reader support.  
-- **Error Logging:** Integrate with a monitoring service like Sentry for production.  
-- **Modular CSS:** Consider BEM or CSS modules to scale styles.  
-- **Performance:** Lazy-load long quote lists if you expand the app.  
-
----
-
-## Future Enhancements
-
-- **Favorites:** Save favorite quotes in `localStorage`.  
-- **Themes:** Add dark/light mode toggling.  
-- **Animations:** Smooth quote transitions (fade, slide).  
-- **API Options:** Allow category selection (e.g., “inspirational”, “funny”).  
-- **Share:** Add social share buttons (Twitter, Facebook).
-
----
-
 ## License
 
 [MIT License](LICENSE)  
 
----
-
-Happy coding! Feel free to open an issue or submit a pull request with your improvements.
