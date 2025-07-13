@@ -1,0 +1,200 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  font-size: 18px;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  font-weight: 400;
+  color: #333;
+  overflow: hidden;
+}
+
+header {
+  width: 100%;
+  padding: 20px;
+  text-align: center;
+  border-bottom: rgb(31, 30, 30) 1px solid;
+  box-shadow: 15px 0px 15px #333;
+}
+
+header .logo {
+  font-size: 30px;
+  font-weight: 600;
+}
+header .logo-icon {
+  color: #000;
+}
+main {
+  width: 60%;
+  height: 450px;
+  max-height: 500px;
+  margin: 5rem auto;
+  display: flex;
+  flex-direction: column;
+  align-items: self-start;
+}
+
+.hero,
+p.motivation {
+  width: 60%;
+  margin: auto;
+}
+.hero {
+  letter-spacing: 0.1em;
+  padding: 2px;
+}
+
+p.motivation {
+  padding: 5px;
+  color: #666;
+}
+.quote-box {
+  width: 60%;
+  margin: 3rem auto;
+  /* margin-bottom: 3rem; */
+}
+
+.quote {
+  font-size: 24px;
+  font-weight: 600;
+  font-style: italic;
+}
+
+.author {
+  color: #555;
+  margin: 2.5rem 0 0.1rem 0;
+}
+
+.get-quote-button {
+  width: 80%;
+  padding: 8px;
+  margin: 0 auto;
+  border: none;
+  border-radius: 5px;
+  background-color: #107aec;
+  color: #fff;
+  font-size: 18px;
+  transition: transform 0.5s ease;
+}
+
+.get-quote-button:hover {
+  background-color: #2d90fa;
+  transform: scale(0.95);
+  cursor: pointer;
+}
+.spinner {
+  margin: 1rem auto;
+  width: 40px;
+  height: 40px;
+  border: 4px solid #ccc;
+  border-top: 4px solid #007bff;
+  border-radius: 50%;
+  animation: spin 1s linear infinite;
+}
+
+.hidden {
+  display: none;
+}
+
+@keyframes spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.quote-button:disabled {
+  background: #aaa;
+  cursor: not-allowed;
+}
+
+@media (min-width: 480px) {
+  html,
+  body {
+    font-size: 16px;
+    overflow: auto;
+  }
+
+  .logo {
+    font-size: 20px;
+  }
+
+  main,
+  .quote-box,
+  .hero,
+  p.motivation {
+    width: 90%;
+    margin: 1rem auto 0;
+  }
+  .hero {
+    padding: 1px;
+  }
+  .quote {
+    margin: 0;
+    font-size: 20px;
+  }
+  .author {
+    margin-bottom: 20px;
+  }
+  .get-quote-button {
+    width: 80%;
+    font-size: 16px;
+  }
+
+  .spinner {
+    width: 30px;
+    height: 30px;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1440px) {
+  main,
+  .quote-box,
+  .hero,
+  p.motivation {
+    width: 70%;
+  }
+
+  html,
+  body {
+    font-size: 18px;
+  }
+
+  .quote {
+    font-size: 24px;
+  }
+
+  .get-quote-button {
+    width: 70%;
+  }
+}
+
+@media (min-width: 1441px) {
+  html,
+  body {
+    font-size: 20px;
+  }
+
+  .logo {
+    font-size: 36px;
+  }
+
+  main,
+  .quote-box,
+  .hero,
+  p.motivation {
+    width: 50%;
+  }
+
+  .quote {
+    font-size: 28px;
+  }
+
+  .get-quote-button {
+    width: 320px;
+    font-size: 20px;
+  }
+}

@@ -4,16 +4,26 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Random Quote Generator</title>
+    <link rel="stylesheet" href="./css/styles.css" />
   </head>
   <body>
     <header>
       <div>
-        <p class="logo">Random Quote Generator</p>
+        <p class="logo">💬Random Quote Generator</p>
       </div>
     </header>
     <main>
-      <div id="quote-display-area" class="quote-display-area"></div>
-      <button id="get-quote-button">Generate Quote</button>
+      <div class="hero">
+        <h1>Generate A Quote</h1>
+      </div>
+      <p class="motivation">Get a quote and get motivated today.😁</p>
+      <div class="quote-box">
+        <div id="quote-display-area" class="quote-display-area"></div>
+        <div id="loading-spinner" class="spinner hidden"></div>
+      </div>
+      <button id="get-quote-button" class="get-quote-button">
+        Generate Quote
+      </button>
     </main>
     <script src="./js/main.js"></script>
   </body>
